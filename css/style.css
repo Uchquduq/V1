@@ -212,7 +212,7 @@ body {
   }
 }
 .hero {
-  background: #f1f1f1 url("../../img/hero/meva.jpg") no-repeat center top;
+  background: #f1f1f1 url("../img/hero/meva.jpg") no-repeat center top;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 270px;
