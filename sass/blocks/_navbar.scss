@@ -1,0 +1,176 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+
+  &-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__mobile,
+  &__landline {
+    text-align: right;
+  }
+
+  &__phone {
+    display: block;
+    font-size: 19px;
+    @include bold;
+    text-decoration: none;
+    color: $text-color;
+    margin-bottom: 5px;
+  }
+
+  &__small-text {
+    display: block;
+    color: $text-color-light;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  padding: 16px 0;
+  width: 100%;
+  background-color: $primary;
+  z-index: 0;
+  transform: translateY(-200%);
+  transition: 0.2s;
+  opacity: 0;
+
+  &-button_active span {
+    background: #000;
+    transform: rotate(45deg);
+  }
+
+  &_active {
+    transform: translateY(0);
+    opacity: 1;
+
+    &>span {
+      background-color: #000;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__link {
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -3px;
+      z-index: 9;
+      content: '';
+      height: 2px;
+      display: block;
+      width: 0%;
+      background-color: #fff;
+      transition: width 0.3s linear;
+    }
+  }
+
+  &-button {
+    height: 80px;
+    width: 70px;
+    border: none;
+    border-right: 1px solid rgba(#510bba, 0.1);
+    border-left: 1px solid rgba(#510bba, 0.1);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__line {
+      width: 20px;
+      height: 3px;
+      background-color: #89a9eb;
+      display: block;
+      margin: 2px;
+      transition: transform 0.4s ease;
+    }
+
+  }
+
+}
+
+.logo {
+  &__text {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    @include bold
+  }
+
+  &__description {
+    display: block;
+    font-size: 14px;
+    color: $text-color-light;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+
+    &__mobile,
+    &__landline {
+      display: none;
+    }
+  }
+
+  .menu {
+    &__nav {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      margin-top: 20px;
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    top: 60px;
+
+    &-button {
+      height: 60px;
+    }
+
+    &__nav {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      margin-top: 20px;
+    }
+  }
+}

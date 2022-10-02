@@ -1,0 +1,31 @@
+body {
+  @include light;
+  color: $text-color;
+}
+
+.button-o {
+  text-transform: uppercase;
+  padding: 17px 22px;
+  font-size: 12px;
+  color: $primary;
+  @include bold;
+  border: 2px solid $primary;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button {
+  padding: 25px 45px;
+  color: #fff;
+  background: $primary;
+  @include bold;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 10px;
+  }
+}
