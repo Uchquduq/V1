@@ -17,6 +17,10 @@ body {
   color: #262626;
 }
 
+img {
+  width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -31,6 +35,7 @@ body {
 }
 
 .button-o {
+  text-decoration: none;
   text-transform: uppercase;
   padding: 17px 22px;
   font-size: 12px;
@@ -42,6 +47,7 @@ body {
 }
 
 .button {
+  text-decoration: none;
   padding: 25px 45px;
   color: #fff;
   background: #507fe1;
@@ -49,6 +55,20 @@ body {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+.button-fitting {
+  color: #507fe1;
+  background-color: #fff;
+}
+.button-add {
+  background: #7c9fe8;
+  color: #fff;
+}
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
+  width: 30px;
+  border: none;
 }
 
 .bg-secondary {
@@ -103,6 +123,7 @@ body {
   left: 0;
   background-color: #fff;
   width: 100%;
+  z-index: 999999;
 }
 .navbar-wrap {
   display: flex;
@@ -392,5 +413,68 @@ body {
   .features-block__item {
     flex-basis: 100%;
     margin-bottom: 50px;
+  }
+}
+.catalog {
+  background-color: #f5f6f8;
+}
+.catalog-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catalog__card {
+  margin-bottom: 30px;
+}
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+.catalog-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(80, 127, 225, 0.8);
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  text-transform: uppercase;
+  z-index: 999;
+}
+.catalog-card__buttons {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.catalog-card__button {
+  padding: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  border: none;
+  height: 30px;
+}
+.catalog-card__image {
+  display: block;
+}
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
   }
 }/*# sourceMappingURL=style.css.map */

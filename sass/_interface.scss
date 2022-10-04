@@ -3,6 +3,10 @@ body {
   color: $text-color;
 }
 
+img {
+  width: 100%;
+}
+
 .section {
   padding: 100px 0;
 
@@ -19,6 +23,7 @@ body {
 }
 
 .button-o {
+  text-decoration: none;
   text-transform: uppercase;
   padding: 17px 22px;
   font-size: 12px;
@@ -30,6 +35,7 @@ body {
 }
 
 .button {
+  text-decoration: none;
   padding: 25px 45px;
   color: #fff;
   background: $primary;
@@ -37,6 +43,23 @@ body {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+
+  &-fitting {
+    color: $primary;
+    background-color: #fff;
+  }
+
+  &-add {
+    background: lighten($primary, 10%);
+    color: #fff;
+  }
+
+  &-like {
+    background-color: $primary;
+    height: 30px;
+    width: 30px;
+    border: none;
+  }
 }
 
 .bg-secondary {
