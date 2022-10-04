@@ -155,7 +155,7 @@ img {
   padding: 16px 0;
   width: 100%;
   background-color: #507fe1;
-  z-index: 0;
+  z-index: 9999;
   transform: translateY(-200%);
   transition: 0.2s;
   opacity: 0;
