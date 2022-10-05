@@ -128,3 +128,17 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .form {
+    &__row {
+      &-checkbox {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    &__checkbox {
+      margin-bottom: 20px;
+    }
+  }
+}

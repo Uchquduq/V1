@@ -390,6 +390,15 @@ img {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 480px) {
+  .form__row-checkbox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form__checkbox {
+    margin-bottom: 20px;
+  }
+}
 .features-block {
   display: flex;
   justify-content: space-between;
@@ -521,5 +530,61 @@ img {
   .blog__card {
     margin-right: 30px;
     margin-left: 30px;
+  }
+}
+.price {
+  background-color: #f1f1f1;
+}
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.price-block__card {
+  margin-bottom: 10px;
+}
+.price-card {
+  background-color: #fff;
+  position: relative;
+}
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+.price-card__title {
+  margin: 0;
+}
+.price-card__cost {
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.price-card__pricetag {
+  display: flex;
+  justify-content: space-between;
+}
+.price-card__button {
+  text-align: center;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  height: 0px;
+  padding: 20px;
+  padding-top: 0;
+}
+.price-card:hover .price-card__button {
+  z-index: 99;
+  bottom: -80px;
+  height: 80px;
+}
+
+@media (max-width: 992px) {
+  .price-block {
+    justify-content: center;
+  }
+  .price-block__card {
+    margin: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
