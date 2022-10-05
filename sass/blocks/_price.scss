@@ -1,5 +1,4 @@
 .price {
-  background-color: #f1f1f1;
 
   &-block {
     display: flex;
@@ -14,6 +13,7 @@
   &-card {
     background-color: #fff;
     position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 
     &__text {
       padding: 20px;
@@ -35,9 +35,9 @@
 
     &__button {
       text-align: center;
-      z-index: -1;
+      z-index:-1;
       position: absolute;
-      bottom: 0;
+      bottom: 80px;
       left: 0;
       width: 100%;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -59,13 +59,23 @@
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
   .price {
     &-block {
       justify-content: center;
 
       &__card {
         margin: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .price {
+    &-block {
+      &__card {
+        margin: 10px;
       }
     }
   }
