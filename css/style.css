@@ -709,4 +709,35 @@ img {
   margin-left: 70px;
   flex-basis: 50%;
   font-size: 20px;
+}
+
+.contacts-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contacts-block__item {
+  text-align: center;
+}
+.contacts__image {
+  margin-bottom: 20px;
+  max-width: 50px;
+}
+.contacts__link {
+  text-decoration: none;
+  font-size: 16px;
+}
+.contacts__address {
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .contacts__address {
+    max-width: 200px;
+    margin: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
