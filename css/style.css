@@ -295,6 +295,10 @@ img {
   margin-top: -200px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
 }
+.offer-block_price-bg {
+  background: #fff url("../img/offer/form-bg_price.jpg") no-repeat center right;
+  background-size: contain;
+}
 .offer__title {
   font-size: 25px;
   margin-bottom: 20px;
@@ -305,13 +309,14 @@ img {
   margin-bottom: 48px;
   font-size: 21px;
   display: block;
+  max-width: 820px;
 }
 
 .form__row {
   display: flex;
   align-items: center;
   max-width: 900px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .form__row:last-child {
   margin-bottom: 0;
@@ -358,18 +363,25 @@ img {
   height: 80px;
   width: 100%;
 }
+.form__policy {
+  font-size: 17px;
+  margin-left: 45px;
+  display: inline-block;
+}
 
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -120px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .offer-block {
     background: none;
     background-color: #fff;
     padding: 40px;
   }
+}
+@media (max-width: 768px) {
   .offer__title {
     font-size: 18px;
   }
@@ -397,6 +409,10 @@ img {
   }
   .form__checkbox {
     margin-bottom: 20px;
+  }
+  .form__policy {
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 .features-block {
@@ -622,9 +638,6 @@ img {
 .step__image {
   max-width: 70px;
 }
-.steps {
-  background-color: #f1f1f1;
-}
 .steps-block {
   display: flex;
   justify-content: space-between;
@@ -643,4 +656,57 @@ img {
   .step {
     width: 100%;
   }
+}
+.reviews {
+  background-color: #f1f6f8;
+  margin-bottom: 30px;
+}
+.reviews-slider {
+  display: flex;
+  justify-content: space-around;
+}
+.reviews-slider__item {
+  text-align: center;
+}
+.reviews-slider__image {
+  height: 70px;
+  width: 70px;
+  display: block;
+  border: 2px solid #6e99a6;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.reviews-slider__text {
+  position: relative;
+  font-size: 15px;
+  font-style: italic;
+  background-color: #fff;
+  max-width: 370px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.reviews-slider__text::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+.factory-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.factory-block__image {
+  margin: 20px 0;
+}
+.factory-block__text {
+  margin-left: 70px;
+  flex-basis: 50%;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
