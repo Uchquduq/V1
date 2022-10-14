@@ -838,4 +838,8 @@ img {
     margin-top: 30px;
     text-align: center;
   }
+}
+.before-slider {
+  max-width: 640px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
