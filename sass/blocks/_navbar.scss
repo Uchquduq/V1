@@ -101,7 +101,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
     &__line {
       width: 20px;
       height: 3px;
